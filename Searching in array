@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main() {
+    int search;
+    int n;
+    printf("Enter the Number : ");
+    scanf("%d",&n);
+    int arr[n];
+    printf("Enter the Elements : ");
+    for(int i=0;i<n;i++){
+        scanf("%d",&arr[i]);
+    }
+    printf("Enter the search : ");
+    scanf("%d",&search);
+    
+    for(int i=0;i<n;i++){
+        if(arr[i]==search){
+            printf("Element found index %d ",i);
+        }
+    }
+    
+
+    return 0;
+}
